@@ -1,0 +1,411 @@
+
+Card-Game.png
+size: 2048, 2048
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+background-2
+  rotate: false
+  xy: 2, 1016
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1
+club-1-256
+  rotate: false
+  xy: 1286, 1028
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+club-10-256
+  rotate: false
+  xy: 1544, 1366
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+club-12-256
+  rotate: false
+  xy: 2, 340
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+club-13-256
+  rotate: false
+  xy: 1034, 690
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+club-3-256
+  rotate: false
+  xy: 1028, 1704
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+club-4-256
+  rotate: false
+  xy: 776, 2
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+club-6-256
+  rotate: false
+  xy: 260, 340
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+club-7-256
+  rotate: false
+  xy: 1292, 352
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+club-9-256
+  rotate: false
+  xy: 1544, 1704
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+diamond-11-256
+  rotate: false
+  xy: 1286, 1704
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+diamond-12-256
+  rotate: false
+  xy: 1034, 14
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+diamond-2-256
+  rotate: false
+  xy: 518, 2
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+diamond-4-256
+  rotate: false
+  xy: 260, 678
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+diamond-5-256
+  rotate: false
+  xy: 1034, 352
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+diamond-7-256
+  rotate: false
+  xy: 518, 678
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+diamond-8-256
+  rotate: false
+  xy: 1292, 14
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+heart-1-256
+  rotate: false
+  xy: 1028, 1028
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+heart-11-256
+  rotate: false
+  xy: 518, 340
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+heart-13-256
+  rotate: false
+  xy: 2, 678
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+heart-2-256
+  rotate: false
+  xy: 1550, 690
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+heart-4-256
+  rotate: false
+  xy: 260, 2
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+heart-7-256
+  rotate: false
+  xy: 776, 678
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+heart-9-256
+  rotate: false
+  xy: 2, 2
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+joker-256
+  rotate: false
+  xy: 1550, 352
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+spade-12-256
+  rotate: false
+  xy: 776, 340
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+spade-2-256
+  rotate: false
+  xy: 1286, 1366
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+spade-3-256
+  rotate: false
+  xy: 1550, 14
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+spade-5-256
+  rotate: false
+  xy: 1544, 1028
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+spade-7-256
+  rotate: false
+  xy: 1028, 1366
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+spade-8-256
+  rotate: false
+  xy: 1292, 690
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+
+Card-Game2.png
+size: 2048, 2048
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+back-256
+  rotate: false
+  xy: 518, 340
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+back2-256
+  rotate: false
+  xy: 2, 2
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+background-1
+  rotate: false
+  xy: 2, 1016
+  size: 1024, 1024
+  orig: 1024, 1024
+  offset: 0, 0
+  index: -1
+club-11-256
+  rotate: false
+  xy: 1028, 1366
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+club-2-256
+  rotate: false
+  xy: 260, 678
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+club-5-256
+  rotate: false
+  xy: 1544, 1704
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+club-8-256
+  rotate: false
+  xy: 1544, 1028
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+diamond-1-256
+  rotate: false
+  xy: 1034, 690
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+diamond-10-256
+  rotate: false
+  xy: 518, 678
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+diamond-13-256
+  rotate: false
+  xy: 1544, 1366
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+diamond-3-256
+  rotate: false
+  xy: 1286, 1704
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+diamond-6-256
+  rotate: false
+  xy: 1286, 1028
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+diamond-9-256
+  rotate: false
+  xy: 776, 678
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+heart-10-256
+  rotate: false
+  xy: 776, 2
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+heart-12-256
+  rotate: false
+  xy: 2, 340
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+heart-3-256
+  rotate: false
+  xy: 776, 340
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+heart-5-256
+  rotate: false
+  xy: 2, 678
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+heart-6-256
+  rotate: false
+  xy: 1292, 690
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+heart-8-256
+  rotate: false
+  xy: 1028, 1028
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+spade-1-256
+  rotate: false
+  xy: 518, 2
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+spade-10-256
+  rotate: false
+  xy: 1028, 1704
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+spade-11-256
+  rotate: false
+  xy: 1034, 14
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+spade-13-256
+  rotate: false
+  xy: 1286, 1366
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+spade-4-256
+  rotate: false
+  xy: 1034, 352
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+spade-6-256
+  rotate: false
+  xy: 260, 340
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
+spade-9-256
+  rotate: false
+  xy: 260, 2
+  size: 256, 336
+  orig: 256, 336
+  offset: 0, 0
+  index: -1
