@@ -43,6 +43,9 @@ public class GameScreen extends ScreenAdapter {
     private TextureRegion club1;
     private TextureRegion club2;
     private TextureRegion club3;
+    private TextureRegion diamondJ;
+    private TextureRegion diamondQ;
+    private TextureRegion diamondK;
 
     private Stage stage;
 
@@ -66,6 +69,10 @@ public class GameScreen extends ScreenAdapter {
         club2 = textureAtlas.findRegion("club-2-256");
         club3 = textureAtlas.findRegion("club-3-256");
         joker = textureAtlas.findRegion("joker-256");
+        diamondJ = textureAtlas.findRegion("diamond-11-256");
+        diamondQ = textureAtlas.findRegion("diamond-12-256");
+        diamondK = textureAtlas.findRegion("diamond-13-256");
+
         stage = new Stage(viewport);
 
         Gdx.input.setInputProcessor(stage);
@@ -74,12 +81,17 @@ public class GameScreen extends ScreenAdapter {
         cards.add(new Card(backCard, club2));
         cards.add(new Card(backCard, club3));
         cards.add(new Card(backCard, joker));
+        cards.add(new Card(backCard, diamondJ));
+        cards.add(new Card(backCard, diamondQ));
+        cards.add(new Card(backCard, diamondK));
+        cards.add(new Card(backCard, joker));
+
         for (Card c : cards) {
             c.addActor(stage);
         }
 
-        cards.first().setPosition((hud.WORLD_WIDTH / 2) - (cards.first().getWidth() * 2),
-                hud.WORLD_HEIGHT - 200);
+        cards.first().setPosition(hud.WORLD_WIDTH / 4,
+                hud.WORLD_HEIGHT / 1.5f);
         for (int i = 1; i < 4; i++) {
             Card c = cards.get(i - 1);
             float cX = c.getPositionX();
@@ -90,6 +102,14 @@ public class GameScreen extends ScreenAdapter {
             cards.get(i).setPosition((cX + width) + DISTANCE_BETWEEN, cY);
         }
 
+        cards.get(4).setPosition(hud.WORLD_WIDTH / 4, hud.WORLD_HEIGHT / 3f);
+        for (int i = 5; i < 8; i++) {
+            Card c = cards.get(i - 1);
+            float cX = c.getPositionX();
+            float cY = c.getPositionY();
+            float width = c.getWidth();
+            cards.get(i).setPosition((cX + width) + DISTANCE_BETWEEN, cY);
+        }
         backgroundTexture = new Texture(Gdx.files.internal("dungeon_bg.png"));
         backgroundTexture2 = new Texture(Gdx.files.internal("dungeon_bg.png"));
 
@@ -97,8 +117,11 @@ public class GameScreen extends ScreenAdapter {
 
     @Override
     public void render(float delta) {
-        stage.act();
+        for(Card c : cards) c.updateCards(delta);
+        stage.act(delta);
+
         clearScreen();
+        
         batch.setProjectionMatrix(camera.combined);
         batch.begin();
         draw();
@@ -142,7 +165,7 @@ public class GameScreen extends ScreenAdapter {
     public void resize(int width, int height) {
         viewport.update(width, height, true);
 //        stage.getViewport().update(width, height, true);
-//        System.out.println("w= " + width + "   height= " + height);
+        System.out.println("w= " + width + "   height= " + height);
     }
 
     @Override

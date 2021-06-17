@@ -81,5 +81,6 @@ public class LoadingScreen extends ScreenAdapter {
     @Override
     public void dispose() {
         batch.dispose();
+        bg.dispose();
     }
 }

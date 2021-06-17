@@ -94,6 +94,14 @@ public class StartScreen extends ScreenAdapter implements InputProcessor {
     }
 
     @Override
+    public void dispose() {
+        spriteBatch.dispose();
+        backgroundTexture.dispose();
+        backgroundTexture2.dispose();
+        bitmapFont.dispose();
+    }
+
+    @Override
     public void resize(int width, int height) {
         viewport.update(width, height, true);
     }

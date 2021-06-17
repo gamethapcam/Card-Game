@@ -7,10 +7,12 @@ import com.badlogic.gdx.scenes.scene2d.Action;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.actions.Actions;
+import com.badlogic.gdx.scenes.scene2d.actions.SequenceAction;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ActorGestureListener;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
+import customactions.MyActions;
 import org.w3c.dom.css.Rect;
 
 public class Card {
@@ -18,10 +20,11 @@ public class Card {
     private float x, y;
     private ImageButton backImageButton;
     private ImageButton frontImage;
-    private float width = 100;
-    private float height = 130;
+    private float width = 110;
+    private float height = 140;
     private Rectangle cardRectangleBorder;
     private boolean allowDraw = false;
+    private float timer = 0f;
 
     public Card(TextureRegion back, TextureRegion front) {
         this.backImageButton = new ImageButton(new TextureRegionDrawable(back));
@@ -31,13 +34,19 @@ public class Card {
         backImageButton.setSize(width, height);
         frontImage.setSize(width, height);
         cardRectangleBorder = new Rectangle(x, y, width, height );
+
+        backImageButton.setVisible(false);
+        frontImage.addAction(MyActions.showForThreeSeconds(3, backImageButton));
     }
 
+    public void updateCards(float delta) {
+        timer += delta;
+    }
 
     public void drawRectangle(ShapeRenderer shapeRenderer) {
         // only allow rectangle to be drawn if the front Image is shown.
         // check flipButtonListener method for flag control.
-        if (allowDraw)
+        if (allowDraw || timer <= 3)
             shapeRenderer.rect(x, y, cardRectangleBorder.getWidth(), cardRectangleBorder.height);
     }
 
@@ -48,6 +57,8 @@ public class Card {
                             int button)
             {
                 super.tap(event, x, y, count, button);
+//                backImageButton.setVisible(false);
+                frontImage.setVisible(true);
                 backImageButton.setVisible(false);
                 allowDraw = true;
             }
@@ -61,6 +72,7 @@ public class Card {
                 super.tap(event, x, y, count, button);
                 if (!backImageButton.isVisible()) {
                     backImageButton.setVisible(true);
+                    frontImage.setVisible(false);
                 }
                 allowDraw = false;
             }
@@ -81,6 +93,7 @@ public class Card {
         stage.addActor(frontImage);
         stage.addActor(backImageButton);
     }
+
     public float getPositionX() {
         return this.x;
     }
